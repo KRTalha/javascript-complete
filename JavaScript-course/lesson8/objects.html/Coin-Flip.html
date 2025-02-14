@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coin  FLip</title>
+</head>
+<body>
+
+  <div style = "display: block;
+    background-color: pink;
+    align-items: center;">
+    
+    
+  
+  
+
+    <p  style="display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    
+    ">    
+      Coin Flip Game
+    </p>
+
+
+    <button onclick="
+    
+    playGame('Heads')"
+    
+    >Heads</button>
+
+    <button onclick="
+    playGame('Tail')
+    "
+    
+    >Tails</button>
+
+    
+  </div>
+
+  <script>
+    
+
+
+      function playGame(guess){
+        
+
+        const randomNumber = Math.random();
+        const result = randomNumber < 0.5 ? 'Heads' : 'Tail';
+        console.log(guess === result ? 'Win' : 'Lose')
+
+
+      }
+
+      
+      console.log(guess === result ? 'Win ' : 'Lose');
+     
+</script>
+
+
+  
+</body>
+</html>

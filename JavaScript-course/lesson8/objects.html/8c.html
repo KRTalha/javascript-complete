@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8C</title>
+</head>
+<body>
+
+  <script>
+    const product1 = {
+      name : 'BasketBall',
+      price : 2095
+    }
+    product1.price += 500;
+
+    product1['delivery-time'] = '3 days';
+    console.log(product1);
+
+    const product2 = {
+      name : 'Football',
+      price :  2390,
+      ['delivery-time'] : '4 days'
+    }
+    console.log(product2);
+
+    function camprePrice(product1, product2) {
+      if (product1.price < product2.price) {
+
+       return console.log(`The ${product1.name} is cheap than the ${product2.name}`);
+        
+      
+    }else if (product2.price < product1.price) {
+
+    return console.log(`The ${product2.name} is cheap than the ${product1.name}`);
+
+
+    }}
+
+    camprePrice(product1, product2);
+
+  </script>
+  
+</body>
+</html>

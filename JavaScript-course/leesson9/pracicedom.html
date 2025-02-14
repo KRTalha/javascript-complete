@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Dom</title>
+</head>
+<body>
+
+  <button onclick="
+    
+  subscribeButton();
+    " class="subscribe-button" 
+    
+    >Subscribe</button>
+
+    <button onclick="
+    unSubscribe();
+    
+    " class="unSubscribe">Subscribed
+
+    </button>
+
+    <script>
+
+      function subscribeButton(){
+        const subButton = document.querySelector('.subscribe-button');
+        if(subButton.innerText === 'Subscribe'){
+          subButton.innerHTML = 'Subscribed'
+        }else {
+          subButton.innerHTML = 'Subscribe'
+          
+        }
+      }
+
+      function unSubscribe(){
+        const unSubButton = document.querySelector('.unSubscribe');
+        if(unSubButton.innerText === 'Subscribed'){
+          unSubButton.innerHTML = 'UnSubscribe'
+        }else {
+          unSubButton.innerHTML = 'Subscribed'
+        }
+      }
+
+
+    </script>
+
+  
+</body>
+</html>

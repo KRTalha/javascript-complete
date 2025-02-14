@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>convertLength</title>
+</head>
+<body>
+
+  <script>
+
+    function convertLenght(distance , unit){
+      if(unit ==='miles'){
+        
+        return distance * 1.6 + ' km';
+      }else if(unit ==='km'){
+
+        return distance * 1/1.6 + ' miles';
+      }
+      
+
+    }
+
+    console.log(convertLenght(32 , "km"))
+
+  </script>
+  
+</body>
+</html>

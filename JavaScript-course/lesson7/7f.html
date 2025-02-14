@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>convertTemp</title>
+</head>
+<body>
+
+    <script>
+
+      function convertTemp(temp , unit){
+        if (unit === "C"){
+          const fahrenheit = (temp * 9/5)+ 32 + " F° " ; 
+
+          return fahrenheit;
+        }else if(unit ==="F"){
+          const calsius = (temp - 32) * 5/9 + " C°";
+
+          return calsius;
+        }
+      }
+
+      const convertTemp1 = convertTemp(86 , "F");
+      console.log(convertTemp1);
+    </script>
+  
+</body>
+</html>
